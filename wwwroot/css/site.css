@@ -232,6 +232,45 @@ html, body {
   font-size: 0.95rem;
 }
 
+/* Chatbot */
+.chat-messages {
+  min-height: 260px;
+  max-height: 360px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(10, 16, 32, 0.55);
+}
+
+.chat-bubble {
+  max-width: 82%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.chat-bubble.user {
+  margin-left: auto;
+  background: rgba(124, 92, 255, 0.35);
+  border: 1px solid rgba(124, 92, 255, 0.6);
+}
+
+.chat-bubble.bot {
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.chat-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
 /* Print Resume */
 .no-print {
   display: block;

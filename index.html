@@ -204,6 +204,28 @@
                 </div>
             </div>
         </section>
+
+        <section class="section" id="chatbot">
+            <div class="container">
+                <h2 class="section-title">Chatbot</h2>
+                <div class="card-glass card-2">
+                    <p class="muted mb-3">
+                        Ask a question and send it to your Flowise API.
+                    </p>
+                    <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+                    <form id="chatForm" class="chat-form mt-3">
+                        <input
+                            id="chatInput"
+                            type="text"
+                            class="form-control"
+                            placeholder="Type your message..."
+                            autocomplete="off"
+                            required />
+                        <button id="sendBtn" type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="border-top footer text-muted">
