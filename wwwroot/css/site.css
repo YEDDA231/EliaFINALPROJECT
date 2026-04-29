@@ -280,6 +280,13 @@ html, body {
   html, body {
     background: #fff !important;
     color: #000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  * {
+    color: #000 !important;
+    text-shadow: none !important;
   }
 
   header, footer, nav, .no-print {
@@ -296,5 +303,35 @@ html, body {
     box-shadow: none !important;
     padding: 0 !important;
     border-radius: 0 !important;
+  }
+
+  .card-glass,
+  .card-glass.card-2,
+  .project-card,
+  .chip,
+  .badge-pill {
+    background: #fff !important;
+    border: 1px solid #cfcfcf !important;
+    box-shadow: none !important;
+  }
+
+  .muted,
+  .small-muted {
+    color: #000 !important;
+    opacity: 1 !important;
+  }
+
+  .card-glass,
+  .timeline-item,
+  .section-title,
+  .skill-tags,
+  .resume-header {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
   }
 }
